@@ -102,7 +102,7 @@ if __name__ == "__main__":
     in_files = args.input
     out_files = get_output_filenames(args)
 
-    net = UNet(n_channels=3, n_classes=1)
+    net = UNet(n_channels=1, n_classes=1)
 
     logging.info("Loading model {}".format(args.model))
 
@@ -124,12 +124,11 @@ if __name__ == "__main__":
                            out_threshold=args.mask_threshold,
                            device=device)
 
-        if not args.no_save:
-            out_fn = out_files[i]
-            result = mask_to_image(mask)
-            result.save(out_files[i])
-
-            logging.info("Mask saved to {}".format(out_files[i]))
+        # out_fn = out_files[i]
+        result = mask_to_image(mask)
+        # result.save(out_files[i])
+        result.save("output.png")
+        print(f"Mask Image saved to output.png")
 
         if args.viz:
             logging.info("Visualizing results for image {}, close to continue ...".format(fn))
