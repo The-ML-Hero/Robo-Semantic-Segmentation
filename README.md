@@ -1,7 +1,7 @@
 # UNet: semantic segmentation with PyTorch
 
 
-![input and output for a random image in the test dataset](https://i.imgur.com/GD8FcB7.png)
+![input and output for a random image in the test dataset](https://raw.githubusercontent.com/The-ML-Hero/Pytorch-Semantic-Segmentation/master/utils/Github_Graph.png)
 
 
 Customized implementation of the [U-Net](https://arxiv.org/abs/1505.04597) in PyTorch for high definition images.
