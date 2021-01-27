@@ -1,4 +1,4 @@
-# UNet: semantic segmentation with PyTorch
+# UNet: semantic segmentation with PyTorch 🤖
 
 
 ![input and output for a random image in the test dataset](https://raw.githubusercontent.com/The-ML-Hero/Pytorch-Semantic-Segmentation/master/utils/Github_Graph.png)
