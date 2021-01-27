@@ -36,7 +36,7 @@ You can specify which model file to use with `--model MODEL.pth`.
 
 ### Training via the CLI (Deprecated)
 
-```shell script
+```
 > python train.py -h
 ```
 
