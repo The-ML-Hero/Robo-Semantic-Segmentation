@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/The-ML-Hero/Robo-Semantic-Segmentation/master/Logo.jpg "          ")
+![Logo](https://raw.githubusercontent.com/The-ML-Hero/Robo-Semantic-Segmentation/master/Logo.jpg)
 
 
 # 🤖 Robo Semantic Segmentation 🤖
