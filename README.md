@@ -1,9 +1,4 @@
-<p align="center">
-    <br>
-    <img src="https://raw.githubusercontent.com/The-ML-Hero/Robo-Semantic-Segmentation/master/Logo.jpg" width="400"/>
-    <br>
-<p>
-
+![Logo](https://raw.githubusercontent.com/The-ML-Hero/Robo-Semantic-Segmentation/master/Logo.jpg "          ")
 
 
 # 🤖 Robo Semantic Segmentation 🤖
