@@ -2,7 +2,9 @@
 
 **A REALLY! simple to use library for semantic segmentation, even a untrained network can use it.(not really)**
 
-![input and output for a random image in the test dataset](https://raw.githubusercontent.com/The-ML-Hero/Pytorch-Semantic-Segmentation/master/utils/Github_Graph.png)
+
+![input and output for a random image in the test dataset](https://raw.githubusercontent.com/The-ML-Hero/Robo-Semantic-Segmentation/master/utils/Github_Graph.png)
+
 
 
 Customized implementation of the [U-Net](https://arxiv.org/abs/1505.04597) in PyTorch for high definition images with a simple API to use. It's really easy in just 3 lines of code you can a highly accurate working model.
