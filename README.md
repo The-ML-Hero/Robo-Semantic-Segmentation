@@ -12,9 +12,9 @@ Customized implementation of the [U-Net](https://arxiv.org/abs/1505.04597) in Py
 ### Python Wrapper(Recommended)
 
 ```python 
-import pytorch-segmentation as ps
+import pytorch_segmentation as ps
 net = ps.make_model(n_channels=3,n_classes=1,bilinear=True) # n_channels is the number of input channels(i.e,3 for rgb,bgr,etc.. and 1 is for grayscale images)
-train(net=net,epochs=5,batch_size=4,lr=0.0001,img_scale=0.5,val_percent=10.0) # train the network 
+ps.train(net=net,epochs=5,batch_size=4,lr=0.0001,img_scale=0.5,val_percent=10.0) # train the network 
 ```
 
 By default, the `scale` is 0.5, so if you wish to obtain better results (but use more memory), set it to 1.
