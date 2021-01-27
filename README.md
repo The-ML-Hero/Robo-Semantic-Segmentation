@@ -6,6 +6,19 @@
 
 Customized implementation of the [U-Net](https://arxiv.org/abs/1505.04597) in PyTorch for high definition images with a simple API to use. It's really easy in just 3 lines of code you can a highly accurate working model.
 
+## Data Preprocessing
+``` bash 
+Dataset
+└── Images
+    └── 01.png, 02.png, 03.png
+└── Masks
+    └── 01.png, 02.png, 03.png
+```
+
+You'll need two directories Images and Masks, in the Images directory you'll have all the input images to the model and in the Masks directory you'll have all the corresponding annotation masks; each pixel in the annotation map corresponds to the class label i.e., if a pixel in the annotation map is 1 then it's class is also 1 and so on.
+
+And make sure the file names correspond with each image and annotation pair as shown in the tree.
+
 ## Usage
 **Note : Use Python 3.6 or newer**
 
