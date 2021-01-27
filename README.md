@@ -1,5 +1,6 @@
-# UNet: semantic segmentation with PyTorch 🤖
+#🤖 Robo Semantic Segmentation 🤖
 
+**A REALLY! simple to use library for semantic segmentation, even a untrained network can use it.(not really)**
 
 ![input and output for a random image in the test dataset](https://raw.githubusercontent.com/The-ML-Hero/Pytorch-Semantic-Segmentation/master/utils/Github_Graph.png)
 
