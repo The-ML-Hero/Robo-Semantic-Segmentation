@@ -13,7 +13,7 @@ Customized implementation of the [U-Net](https://arxiv.org/abs/1505.04597) in Py
 
 ```python 
 import pytorch_segmentation as ps
-net = ps.make_model(n_channels=3,n_classes=1,bilinear=True) # n_channels is the number of input channels(i.e,3 for rgb,bgr,etc.. and 1 is for grayscale images)
+net = ps.make_model(n_channels=3,n_classes=1,bilinear=True,dir_img = '/content/data/data/membrane/train/image/',dir_mask = '/content/data/data/membrane/train/label/') # n_channels is the number of input channels(i.e,3 for rgb,bgr,etc.. and 1 is for grayscale images)
 ps.train(net=net,epochs=5,batch_size=4,lr=0.0001,img_scale=0.5,val_percent=10.0) # train the network 
 ```
 
