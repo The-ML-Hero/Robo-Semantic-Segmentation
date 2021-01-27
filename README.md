@@ -1,3 +1,9 @@
+<p align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/The-ML-Hero/Robo-Semantic-Segmentation/master/Logo.jpg" width="400"/>
+    <br>
+<p>
+
 # 🤖 Robo Semantic Segmentation 🤖
 
 **A REALLY! simple to use library for semantic segmentation, even a untrained network can use it.(not really)**
