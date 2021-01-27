@@ -127,7 +127,7 @@ def initial_training(net,
 
     writer.close()
 
-def train(net,epochs,batch_size,lr,img_scale,val_percent):
+def train(net,epochs,batch_size,lr,img_scale,val_percent,dir_img = '/content/data/data/membrane/train/image/',dir_mask = '/content/data/data/membrane/train/label/'):
   logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
   device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
   logging.info(f'Network:\n'
@@ -138,12 +138,14 @@ def train(net,epochs,batch_size,lr,img_scale,val_percent):
   net.to(device=device)
   try:
     train_net(net=net,
-    epochs=args.epochs,
-    batch_size=args.batchsize,
-    lr=args.lr,
+    epochs=epochs,
+    batch_size=batch_size,
+    lr=lr,
     device=device,
-    img_scale=args.scale,
-    val_percent=args.val / 100)
+    img_scale=imgscale,
+    val_percent=val_percent / 100,
+    dir_img =dir_img, 
+    dir_mask =dir_mask)
   except KeyboardInterrupt:
     torch.save(net.state_dict(), 'INTERRUPTED.pth')
     logging.info('Saved interrupt')
